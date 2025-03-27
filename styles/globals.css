@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* @theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: "640px";
+  --breakpoint-md: "768px";
+  --breakpoint-lg: "1024px";
+} */
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-beach: #17fe66;
+  --color-biking: #c61521;
+  --color-cooking: #f1e54e;
+  --color-dancing: #ae29f7;
+  --color-museum: #00e9f3;
+
+  --color-travel: #3f20b6;
+  --color-drawing: #ff00d0;
+  --color-history: #fb1c2b;
+  --color-wood: #00e752;
+  --color-photography: #f1e54e;
+  --color-poetry: #00837b;
+  --color-knitting: #352359;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  box-sizing: border-box;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-1 {
+  background-image: url("../public/banner-edit.jpeg");
+}
+.travel {
+  background-color: #3f20b6;
+}
+.drawing {
+  background-color: #ff00d0;
+}
+.history {
+  background-color: #fb1c2b;
+}
+.wood {
+  background-color: #00e752;
+}
+.photography {
+  background-color: #f1e54e;
+}
+.poetry {
+  background-color: #00837b;
+}
+.knitting {
+  background-color: #352359;
+}
+
+.beach {
+  background-color: #17fe66;
+}
+.biking {
+  background-color: #c61521;
+}
+.cooking {
+  background-color: #f1e54e;
+}
+.dancing {
+  background-color: #ae29f7;
+}
+.museum {
+  background-color: #00e9f3;
+}

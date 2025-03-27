@@ -1,0 +1,1 @@
+export const options = ["Dating", "Marriage", "Friendship", "Professional"];
