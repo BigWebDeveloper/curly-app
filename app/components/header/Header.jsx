@@ -6,6 +6,7 @@ import a from "../../asset/favicon.png";
 import b from "../../asset/profile.jpeg";
 import { useGlobalContext } from "@app/templates/GlobalContext";
 import { BiSolidBellRing } from "react-icons/bi";
+import { IoMdMenu } from "react-icons/io";
 import Link from "@node_modules/next/link";
 import { IoMdSearch } from "react-icons/io";
 import { useState } from "react";
@@ -15,17 +16,22 @@ import { IoIosSearch } from "react-icons/io";
 
 const Header = () => {
   const [hide, setHide] = useState(true);
-  const { jainiPurva } = useGlobalContext();
+  const { jainiPurva,setIsShowNav,isShowNav} = useGlobalContext();
+
+  const handleIsShow = () => {
+    setIsShowNav(!isShowNav);
+  };
+
   return (
     <header className="fixed top-0 left-0 flex flex-row items-center max-md:px-5 max-xl:gap-15 max-md:gap-10 bg-white  w-full h-17 py-4 px-15 gap-30 z-100">
-      <Link href="/" className="flex items-center max-md:gap-1 gap-3">
+      <Link href="/" className="flex items-center ">
         <ImageTemp
           src={a}
           alt="logo"
-          containerClass="w-10 h-10 rounded-full overflow-hidden"
+          containerClass="w-12 h-12 rounded-full overflow-hidden"
           className="object-center object-cover h-full"
         />
-        <p className={`${jainiPurva} text-2xl`}>Curly</p>
+        <p className={`${jainiPurva} opacity-80 text-[1.8rem]  max-sm:text-[1.8rem]`}>Curly</p>
       </Link>
       <div id="search-section" className="flex gap-5 max-md:hidden">
         <Search />
@@ -41,7 +47,7 @@ const Header = () => {
             onClick={() => setHide(!hide)}
           />
         </button>
-        <button type="button" onClick={() => console.log("woring....")}>
+        <button type="button">
           <BiSolidBellRing
             title="notification"
             size={22}
@@ -57,6 +63,14 @@ const Header = () => {
             className="object-center object-cover h-full"
           />
         </Link>
+
+        <button type="button" className="py-1 px-2 rounded-sm bg-black sm:hidden" onClick={handleIsShow}>
+          <IoMdMenu
+            title="notification"
+            size={27}
+            className="text-white cursor-pointer"
+          />
+        </button>
       </div>
 
       <div

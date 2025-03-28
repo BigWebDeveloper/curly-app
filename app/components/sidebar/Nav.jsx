@@ -7,9 +7,10 @@ import a from "@public/profile.jpeg";
 import { useGlobalContext } from "@app/templates/GlobalContext";
 import { RxCross2 } from "react-icons/rx";
 import ImageTemp from "@app/templates/ImageTemp";
+import clsx from "@node_modules/clsx";
 
 const Nav = () => {
-  const pathname = usePathname;
+  const pathname = usePathname();
   const { isShowNav, setIsShowNav } = useGlobalContext();
   return (
     <>
@@ -39,12 +40,12 @@ const Nav = () => {
                 key={index}
                 href={item.links}
                 onClick={() => setIsShowNav(!isShowNav)}
-                className={`group flex items-center p-2 rounded text-black hover:text-white hover:bg-red-500 gap-3 `}
+                className={clsx("group flex items-center p-2 rounded text-black hover:text-white hover:bg-red-500 gap-3",pathname == item.links&&"bg-red-500 text-white" )}
               >
                 <Image
                   src={item.images}
                   alt={item.alt}
-                  className="w-5 hover:filter group-hover:brightness-0 group-hover:invert"
+                  className={clsx("w-5 hover:filter group-hover:brightness-0 group-hover:invert",pathname == item.links&&"invert")}
                 />
                 <p className="text-sm">{item.name}</p>
               </Link>

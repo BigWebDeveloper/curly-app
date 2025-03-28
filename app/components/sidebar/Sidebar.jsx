@@ -13,8 +13,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-35 absolute flex justify-center items-start p-10">
-      <button type="button" className="fixed max-sm:top-20 max-sm:left-1 cursor-pointer" onClick={handleIsShow}>
+    <div className="w-35 absolute flex justify-center items-start p-10" onClick={handleIsShow}>
+      <button type="button" className="fixed max-sm:hidden cursor-pointer" onClick={handleIsShow}>
         <IoMdMenu title="menu" size={30} />
       </button>
       <Nav />

@@ -18,7 +18,7 @@ export const navlink = [
     links:"/favorites", name:"Favorites" , images:c, alt:"favorites1"
 },
 {
-    links:"/My-mutuals", name:"My Mutuals" , images:d, alt:"mutuals1"
+    links:"/my-mutuals", name:"My Mutuals" , images:d, alt:"mutuals1"
 },
 {
     links:"/my-subscribed", name:"My Subscribed" , images:e, alt:"subscribed1"

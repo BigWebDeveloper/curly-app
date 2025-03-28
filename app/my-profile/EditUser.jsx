@@ -23,8 +23,8 @@ const EditUser = () => {
   };
 
   return (
-    <div id="edit-myself" className="grid gap-3 w-90 h-full text-[12px]">
-      <label className="relative h-full block bg-white  rounded-md border-2 border-gray-300">
+    <div id="edit-myself" className="grid gap-3 bg-green-600 max-w-90 h-full text-[12px]">
+      <label className="relative h-18 block bg-white  rounded-md shadow-sm">
         <textarea
           placeholder="A few words about myself..."
           className="resize-none flex w-full h-full p-2"
@@ -46,7 +46,7 @@ const EditUser = () => {
         )}
       </label>
 
-      <div className="flex justify-between p-2 w-full bg-white rounded-md border-2 border-gray-300">
+      <div className="flex justify-between h-18 items-center p-4 w-full bg-white rounded-md shadow-sm">
         {images.map((items, index) => {
           return items ? (
             <div key={index}>
@@ -55,14 +55,14 @@ const EditUser = () => {
                 index={index}
                 src={items}
                 className="h-full object-center object-cover"
-                containerClass="w-13 h-13 bg-yellow-500 rounded-md overflow-hidden"
+                containerClass="w-13 h-12 bg-yellow-500 rounded-md border-1 border-gray-200 overflow-hidden"
               />
             </div>
           ) : (
             <Link
               key={index}
               href="/edit"
-              className="w-13 h-13 flex justify-center items-center flex-col rounded-md border-1 border-gray-500 bg-white"
+              className="w-13 h-13 flex justify-center items-center flex-col rounded-md border-1 border-gray-200 bg-white"
             >
               <span className="text-[9px]">Add Photo</span>
               <ImageTemp src={a} className="w-6" alt={`user-${index}`} />

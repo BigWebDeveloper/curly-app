@@ -1,23 +1,28 @@
+"use client";
 import Link from "@node_modules/next/link";
 import ImageTemp from "@app/templates/ImageTemp";
 import a from "@public/profile.jpeg";
-import { FaPlus } from "@node_modules/react-icons/fa";
-import { FaEdit } from "@node_modules/react-icons/fa";
+import { FaPlus, FaEdit } from "@node_modules/react-icons/fa";
 import EditUser from "./EditUser";
 import Interest from "./Interest";
 import Hobby from "./Hobby";
 import AboutMe from "./AboutMe";
+import { useRouter } from "@node_modules/next/navigation";
+import LookingFor from "./LookingFor";
 
 const page = () => {
   const user = ["Temiloluwa", 27, "Lagos"];
-
+  const router = useRouter();
   return (
-    <div className="mr-30">
+    <div className="">
       <div
         className={`relative p-2 banner-1 bg-cover bg-center bg-no-repeat h-40 rounded-md text-[12px]`}
       >
         <div className="flex justify-between p-2">
-          <button className=" cursor-pointer rounded-sm bg-black/80 py-1 px-5 text-white">
+          <button
+            className=" cursor-pointer rounded-sm bg-black/80 py-1 px-5 text-white"
+            onClick={router.back}
+          >
             Back
           </button>
           <button className="cursor-pointer rounded-sm bg-black/80 py-1 px-5 text-white">
@@ -61,10 +66,11 @@ const page = () => {
         </Link>
       </div>
       <EditUser />
-      <div className="flex flex-row gap-5">
-      <Hobby />
-      <Interest />
-      <AboutMe />
+      <div className="flex flex-row gap-5 flex-wrap">
+        <Hobby />
+        <Interest />
+        <AboutMe />
+        <LookingFor />
       </div>
     </div>
   );

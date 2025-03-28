@@ -30,6 +30,7 @@
   --color-photography: #f1e54e;
   --color-poetry: #00837b;
   --color-knitting: #352359;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,4 +91,35 @@ body {
 }
 .museum {
   background-color: #00e9f3;
+}
+
+
+/* about me color  */
+
+.gender {
+  background-color: #fb1c2b;
+}
+.age {
+  background-color: #5273e4;
+}
+.occupation {
+  background-color: #f1e54e;
+}
+.relationship {
+  background-color: #00a58b;
+}
+.location {
+  background-color: #ae29f7;
+}
+.height {
+  background-color: #006b5a;
+}
+.weight {
+  background-color: #df0018;
+}
+.religion {
+  background-color: #270768;
+}
+.nationality {
+  background-color: #cabe3b;
 }

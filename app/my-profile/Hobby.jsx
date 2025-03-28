@@ -1,14 +1,14 @@
 import { hobbyData } from "./Data";
-import { FaEdit } from "@node_modules/react-icons/fa";
+import { LiaEdit } from "react-icons/lia";
 import ImageTemp from "@app/templates/ImageTemp";
 
 const Hobby = () => {
   return (
-    <div className="w-65 mt-4 rounded-md h-80 block border-1 border-gray-300 shadow-md bg-white p-4">
+    <div className="w-75 mt-4 rounded-md h-85 border-1 border-gray-300 shadow-sm bg-white py-4 px-5">
       <h1 className="flex justify-between">
         <p className="text-sm font-bold">My Hobbies</p>
         <button title="edit" className="cursor-pointer">
-          <FaEdit size={15} />
+          <LiaEdit size={18} />
         </button>
       </h1>
       <div className="grid grid-cols-4 mt-4  gap-2 flex-wrap">

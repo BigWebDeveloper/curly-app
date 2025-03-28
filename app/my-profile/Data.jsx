@@ -11,6 +11,15 @@ import wood from "@public/interest/wood.png";
 import photography from "@public/interest/photography.png";
 import poetry from "@public/interest/poetry.png";
 import knitting from "@public/interest/knitting.png";
+import gender from "@public/about-me/gender.png";
+import age from "@public/about-me/age.png";
+import occupation from "@public/about-me/occupation.png";
+import relationship from "@public/about-me/relationship.png";
+import location from "@public/about-me/location.png";
+import height from "@public/about-me/height.png";
+import weight from "@public/about-me/weight.png";
+import religion from "@public/about-me/religion.png";
+import nationality from "@public/about-me/nationality.png";
 
 export const images = [a, "", "", "", ""];
 
@@ -34,4 +43,36 @@ export const interestData = [
   },
   { alt: "poetry1", color: "poetry", name: "Poetry", src: poetry },
   { alt: "knitting1", color: "knitting", name: "Knitting", src: knitting },
+];
+
+export const AboutMeData = [
+  { value:"Male",alt: "gender1", color: "gender", name: "Gender", src: gender },
+  { value:"27",alt: "age1", color: "age", name: "Age", src: age },
+  { value:"Engineer",alt: "occupation1", color: "occupation", name: "Occupation", src: occupation },
+  { value:"Single",alt: "relationship1", color: "relationship", name: "Relationship", src: relationship },
+  {value:"Lagos",
+    alt: "location1",
+    color: "location",
+    name: "Location",
+    src: location,
+  },
+  { value:"5'5 - 6'0",alt: "height1", color: "height", name: "Height range", src: height },
+  { value:"60 - 70kg",alt: "weight1", color: "weight", name: "Weight range", src: weight },
+  { value:"Christianity",alt: "religion1", color: "religion", name: "Religion", src: religion },
+  { value:"Nigerian",alt: "nationality1", color: "nationality", name: "Nationality", src: nationality },
+];
+export const lookingFor = [
+  { value:"Female",alt: "gender1", color: "gender", name: "Gender", src: gender },
+  { value:"18-25",alt: "age1", color: "age", name: "Age", src: age },
+  { value:"Single",alt: "relationship1", color: "relationship", name: "Relationship", src: relationship },
+  {value:"Lagos",
+    alt: "location1",
+    color: "location",
+    name: "Location",
+    src: location,
+  },
+  { value:"5'5 - 6'0",alt: "height1", color: "height", name: "Height range", src: height },
+  { value:"60 - 70kg",alt: "weight1", color: "weight", name: "Weight range", src: weight },
+  { value:"Christianity",alt: "religion1", color: "religion", name: "Religion", src: religion },
+  { value:"Nigerian",alt: "nationality1", color: "nationality", name: "Nationality", src: nationality },
 ];
