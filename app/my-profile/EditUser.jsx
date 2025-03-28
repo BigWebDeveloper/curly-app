@@ -23,7 +23,7 @@ const EditUser = () => {
   };
 
   return (
-    <div id="edit-myself" className="grid gap-3 bg-green-600 max-w-90 h-full text-[12px]">
+    <div id="edit-myself" className="grid gap-3 max-sm:mt-4 max-w-90 h-full text-[12px]">
       <label className="relative h-18 block bg-white  rounded-md shadow-sm">
         <textarea
           placeholder="A few words about myself..."

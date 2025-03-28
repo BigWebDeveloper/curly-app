@@ -28,13 +28,13 @@ const page = () => {
           <button className="cursor-pointer rounded-sm bg-black/80 py-1 px-5 text-white">
             Update
           </button>
-          <div className=" flex flex-cols absolute top-16 left-15">
+          <div className=" flex flex-cols absolute top-16 left-15  max-sm:bottom-0  max-sm:top-auto max-sm:left-0  ">
             <div className="relative">
               <ImageTemp
                 alt="profile"
                 src={a}
                 className="h-full object-center object-cover"
-                containerClass="rounded-md w-30 h-30 bg-green-500 overflow-hidden"
+                containerClass="rounded-md w-30 h-30 max-sm:w-25 max-sm:h-25 overflow-hidden"
               />
               <span className="absolute -right-2 -bottom-1 bg-blue-800 inline-flex rounded-full text-white p-[6px]">
                 <FaPlus size={8} />

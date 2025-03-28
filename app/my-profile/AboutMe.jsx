@@ -16,7 +16,6 @@ const AboutMe = () => {
                 className="h-full"
                 containerClass={`${items.color} p-1 rounded-full w-[20px] h-[20px]  overflow-hidden`}
               />
-              <pre></pre>
               <span className="text-sm block w-25">{items.name}:</span>
               <span className="text-sm font-bold">{items.value}</span>
             </p>
