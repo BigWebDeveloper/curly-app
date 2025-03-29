@@ -23,7 +23,7 @@ const EditUser = () => {
   };
 
   return (
-    <div id="edit-myself" className="grid gap-3 max-sm:mt-4 max-w-90 h-full text-[12px]">
+    <div id="edit-myself" className="grid max-sm:max-w-full dark:text-gray-800 dark:placeholder-gray-800 gap-4 max-sm:mt-4 max-w-90 h-full text-[12px]">
       <label className="relative h-18 block bg-white  rounded-md shadow-sm">
         <textarea
           placeholder="A few words about myself..."
@@ -46,7 +46,7 @@ const EditUser = () => {
         )}
       </label>
 
-      <div className="flex justify-between h-18 items-center p-4 w-full bg-white rounded-md shadow-sm">
+      <div className="flex justify-between max-sm: h-18 items-center p-4 w-full bg-white rounded-md shadow-sm">
         {images.map((items, index) => {
           return items ? (
             <div key={index}>

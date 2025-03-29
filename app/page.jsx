@@ -32,7 +32,7 @@ const Dashboard = () => {
 
             <div className="relative">
               <button
-                className=" flex items-center w-35 justify-between bg-white py-1 px-4 pr-2 rounded-lg text-sm"
+                className=" flex items-center dark:text-gray-800 w-35 justify-between bg-white py-1 px-4 pr-2 rounded-lg text-sm"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 {dropValue.length > 11
@@ -45,7 +45,7 @@ const Dashboard = () => {
                 )}
               </button>
               {isOpen && (
-                <div className="absolute z-7 mt-4 text-sm bg-white shadow-md p-2 rounded-lg w-full">
+                <div className="dark:text-gray-800 absolute z-7 mt-4 text-sm bg-white shadow-md p-2 rounded-lg w-full">
                   <ul>
                     {options.map((item, index) => (
                       <li

@@ -41,7 +41,7 @@ const page = () => {
               </span>
             </div>
 
-            <div className="font-black p-4">
+            <div className="font-black dark:text-gray-800 p-4">
               <p className="flex items-center gap-4">
                 {user[0]}, {user[1]}{" "}
                 <FaEdit size={18} className="text-black/70" />
@@ -66,7 +66,7 @@ const page = () => {
         </Link>
       </div>
       <EditUser />
-      <div className="flex flex-row gap-5 flex-wrap">
+      <div className="flex mt-4 dark:text-gray-800 flex-row gap-4 flex-wrap">
         <Hobby />
         <Interest />
         <AboutMe />

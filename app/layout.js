@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <GlobalProvider>
-          <Header />
-          <main className="relative bg-black/8 mt-17">
+          <main className="relative bg-black/8 mt-17 dark:bg-gray-800">
+            <Header />
             <Sidebar />
-            <div className="m-auto max-w-9/10 flex-1 p-10 overflow-auto max-sm:max-w-full">
+            <div className="m-auto max-w-9/10 flex-1 sm:p-10 p-4 max overflow-auto max-sm:max-w-10/10">
               {children}
             </div>
           </main>

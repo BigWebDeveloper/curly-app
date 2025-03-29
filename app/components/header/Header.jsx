@@ -31,7 +31,7 @@ const Header = () => {
           containerClass="w-12 h-12 rounded-full overflow-hidden"
           className="object-center object-cover h-full"
         />
-        <p className={`${jainiPurva} opacity-80 text-[1.8rem]  max-sm:text-[1.8rem]`}>Curly</p>
+        <p className={`${jainiPurva} opacity-80 text-[1.8rem] dark:text-gray-800 max-sm:text-[1.8rem]`}>Curly</p>
       </Link>
       <div id="search-section" className="flex gap-5 max-md:hidden">
         <Search />
@@ -59,7 +59,7 @@ const Header = () => {
           <ImageTemp
             src={b}
             alt="logo1"
-            containerClass="w-12 h-12 rounded-full overflow-hidden"
+            containerClass="w-10 h-10 rounded-full overflow-hidden"
             className="object-center object-cover h-full"
           />
         </Link>

@@ -29,7 +29,7 @@ const User = () => {
               className="object-center object-cover h-full"
               containerClass="w-16 h-16 top-12 left-1/2 -translate-x-1/2 rounded-full overflow-hidden border-3 border-white absolute"
             />
-            <div className="py-2 px-4 flex flex-col justify-between h-45 bg-white gap-2">
+            <div className="py-2 dark:text-gray-800 px-4 flex flex-col justify-between h-45 bg-white gap-2">
               <div className="flex justify-between text-[12px] font-medium">
                 <div>
                   <p>

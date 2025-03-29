@@ -4,7 +4,7 @@ import ImageTemp from "@app/templates/ImageTemp";
 
 const Hobby = () => {
   return (
-    <div className="w-75 mt-4 rounded-md h-85 border-1 border-gray-300 shadow-sm bg-white py-4 px-5">
+    <div className="w-75 max-sm:w-full  rounded-md h-85 border-1 border-gray-300 shadow-sm bg-white py-4 px-5">
       <h1 className="flex justify-between">
         <p className="text-sm font-bold">My Hobbies</p>
         <button title="edit" className="cursor-pointer">
